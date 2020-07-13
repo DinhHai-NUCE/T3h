@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Shopping_Cart.css">
+    <title>Shopping - Cart</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="container">
+        <div class="row header-1">
+            <div class="col-lg-6 col-md-6">
+                <h1>
+                    <a href="#">
+                        <img src="./images/logo.jpg" alt="">
+                    </a>
+                </h1>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <button id="contact">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    0902.486.865
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm, Mã đơn hàng...">
+                    <button>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        TÌM KIẾM
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Header-->
+
+    <!--Body-->
+    <div class="body">
+        <div class="container">
+            <h4>
+                <img src="./images/icon/5.1_03.png" alt="">
+                GIỎ HÀNG
+            </h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <input type="checkbox" name="" id="">
+                        </th>
+                        <th scope="col">Mã đơn</th>
+                        <th scope="col">Sản Phẩm</th>
+                        <th scope="col">Đơn giá</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Số tiền</th>
+                        <th scope="col">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" checked>
+                        </td>
+                        <td>PG-09870</td>
+                        <td>
+                            <img src="./images/1.1_68.jpg" alt="">
+                            <div>
+                                <span>Mẫu danh thiếp</span>
+                                <span>PG-10089</span> <br>
+                                <span>Bản quyền: </span>
+                                <span>Printgo</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span>đ 1.000.000</span> <br>
+                            <span>(Xem chi tiết)</span>
+                        </td>
+                        <td>10/hộp</td>
+                        <td>đ 10.000.000</td>
+                        <td>
+                            <button>
+                                <img src="./images/icon/5.1_07.png" alt="">
+                                Sửa
+                            </button>
+                            <button>
+                                <img src="./images/icon/5.1_09.png" alt="">
+                                Xoá
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" checked>
+                        </td>
+                        <td>PG-09870</td>
+                        <td>
+                            <img src="./images/1.1_68.jpg" alt="">
+                            <div>
+                                <span>Mẫu danh thiếp</span>
+                                <span>PG-10089</span> <br>
+                                <span>Bản quyền: </span>
+                                <span>Printgo</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span>đ 1.000.000</span> <br>
+                            <span>(Xem chi tiết)</span>
+                        </td>
+                        <td>10/hộp</td>
+                        <td>đ 10.000.000</td>
+                        <td>
+                            <button>
+                                <img src="./images/icon/5.1_07.png" alt="">
+                                Sửa
+                            </button>
+                            <button>
+                                <img src="./images/icon/5.1_09.png" alt="">
+                                Xoá
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="discount-coupon">
+                <label for="discount-coupon">
+                    <img src="./images/icon/5.1_14.png" alt="">
+                    Mã giảm giá
+                </label>
+                <input type="text" name="discount-coupon" id="text" placeholder="Điền mã giảm giá">
+                <input type="button" value="Áp dụng" id="submit">
+                <span>- đ 0</span>
+            </div>
+            <hr>
+            <div class="row pay">
+                <div class="col-lg-5 choose-all">
+                    <input type="checkbox" name="choose-all">
+                    <label for="choose-all">Chọn tất cả</label>
+                </div>
+                <div class="col-lg-4 money">
+                    <div class="supplies-money">
+                        <span>Tổng tiền hàng</span>
+                        <span id="right">đ120.000</span>
+                    </div>
+                    <div class="transport-fee">
+                        <span>Phí vận chuyển</span>
+                        <span id="right">đ16.050</span>
+                    </div>
+                    <div class="total-money">
+                        <span>Tổng tiền hàng (2 sản phẩm):</span>
+                        <span id="right">đ2.000.000</span>
+                    </div>
+                </div>    
+                <div class="col-3 pay">
+                    <div class="submit">
+                        <input type="submit" value="THANH TOÁN">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Begin Footer-->
+    <footer>
+        <!--Introduction-->
+        <div class="background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <span>Quality Printing</span> <br>
+                        <span>Provide the best quality</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <span>Timely Delivery</span> <br>
+                        <span>Always on time without hassle</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <span>Eco-Minded</span> <br>
+                        <span>All our product is eco-friendly</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <span>Money Back Guaranteed</span> <br>
+                        <span>100% happy customers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Introduction-->
+
+        <div class="background-image">
+            <div class="container">
+                <div class="sign-up">
+                    <div class="event">
+                        <h3>Đăng ký email nhận ngay khuyến mãi <span>300.000 VNĐ</span></h3>
+                        <span id="follow">Theo dõi danh sách gửi mail của chúng tôi</span>
+                    </div>  
+                    <div class="sign-up-by-email">
+                        <input type="text" placeholder="Email của bạn">
+                        <input type="button" value="ĐĂNG KÝ">
+                    </div>
+                </div>
+                <div class="introduction">
+                    <div class="row">
+                        <div class="col-lg-3 care">
+                            <h6>Chăm sóc khách hàng</h6>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        Hotline: 
+                                        <span>0902 186 865</span>
+                                    </li>
+                                    <li>
+                                        Email:                                        
+                                        <span>contact@printgo.vn</span>
+                                    </li>
+                                    <li>Hướng dẫn in ấn</li>
+                                    <li>Hướng dẫn thanh toán</li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="col-lg-3 about">
+                            <h6>Về printgo</h6>
+                            <div class="content">
+                                <ul>
+                                    <li>Giới thiệu PrintGo</li>
+                                    <li>Chính sách bản quyền</li>
+                                    <li>Bảo mật thông tin</li>
+                                    <li>Tuyển dụng</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 partners">
+                            <h6>Đối tác</h6>
+                            <div class="content">
+                                <ul>
+                                    <li>Thanh toán</li>
+                                    <li>
+                                        <img src="./images/1.1_25.png" alt="">
+                                        <img src="./images/icon/1.1_41.jpg" alt="">
+                                        <img src="./images/1.1_29.jpg" alt="">
+                                    </li>
+                                    <li>Vận chuyển</li>
+                                    <li>
+                                        <img src="./images/1.1_39.jpg" alt="">
+                                        <img src="./images/1.1_14.jpg" alt="">
+                                        <img src="./images/1.1_43.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 follow-us">
+                            <h6>Theo dõi PrintGo</h6>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <img src="./images/1.1_22.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="./images/1.1_32.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="./images/1.1_37.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-about-us">
+                    <p>
+                        In Bìa Đựng Hồ Sơ | In Folders |  In Danh Thiếp | In Namecards |  In Giấy Tiêu Đề | In Letterheads |  In Bao Thư | In Envelopes |  In Tờ Gấp | In Leaflets, Brochures |  In Áp Phích | In Poster PP |  In Tờ Rơi | In Flyers | In Cẩm Nang | In Catalogues |  In Phiếu Quà Tặng | In Gift Vouchers |  In Hộp Giấy | In Paper Box |  In Túi Giấy | In Paper Bags |  In Nhãn Decal | In Decal Label |  IGift Vouchers |  In Hộp Giấy | In Paper Box
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>
+                    Copyright @ 2002 - 2019
+                    <span>PRINTG<span>O</span>.COM</span>
+                    Company. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+</body>
+</html>

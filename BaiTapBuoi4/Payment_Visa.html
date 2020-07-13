@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Payment_Visa.css">
+    <title>Payment - Visa</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="container">
+        <div class="row header-1">
+            <div class="col-lg-6 col-md-6">
+                <h1>
+                    <a href="#">
+                        <img src="./images/logo.jpg" alt="">
+                    </a>
+                </h1>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <button id="contact">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    0902.486.865
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm, Mã đơn hàng...">
+                    <button>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        TÌM KIẾM
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Header-->
+
+    <!--Body-->
+    <div class="body">
+        <div class="container">
+            <h4>
+                <img src="./images/icon/6.1_33.png" alt="">
+                THANH TOÁN
+            </h4>
+            <div class="row">
+                <div class="col-lg-4 info">
+                    <div class="address">
+                        <form>
+                            <div class="address-title">
+                                <img src="./images/icon/6.1_07.png" alt="">
+                                <span>ĐỊA CHỈ NHẬN HÀNG</span>
+                            </div>
+                            <div class="name">
+                                <input type="text" placeholder="Họ tên">
+                            </div>
+                            <div class="email">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="phone">
+                                <input type="text" placeholder="Số điện thoại">
+                            </div>
+                            <div class="city">
+                                <select name="" id="city">
+                                    <option value="city">Tỉnh/ Thành phố</option>
+                                </select>
+                            </div>
+                            <div class="district">
+                                <select name="" id="district">
+                                    <option value="district">Phường/ xã</option>
+                                </select>
+                            </div>
+                            <div class="area">
+                                <input type="text" placeholder="Toà nhà, tên đường">
+                            </div>
+                            <div class="default">
+                                <input type="checkbox" name="default">
+                                <label for="default">Đặt làm địa chỉ mặc định</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Hoàn thành">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pay-info">
+                        <form>
+                            <div class="pay-info-title">
+                                <img src="./images/icon/6.1_13.png" alt="">
+                                <span>THÔNG TIN THANH TOÁN</span>
+                            </div>
+                            <div class="name">
+                                <input type="text" placeholder="Họ tên">
+                            </div>
+                            <div class="enterprise-name">
+                                <input type="text" placeholder="Tên doanh nghiệp">
+                            </div>
+                            <div class="fax-number">
+                                <input type="text" placeholder="Mã số thuế"> 
+                            </div>
+                            <div class="city">
+                                <select name="" id="city">
+                                    <option value="city">Tỉnh/ Thành phố</option>
+                                </select>
+                            </div>
+                            <div class="district">
+                                <select name="" id="district">
+                                    <option value="district">Phường/ xã</option>
+                                </select>
+                            </div>
+                            <div class="area">
+                                <input type="text" placeholder="Toà nhà, tên đường">
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Hoàn thành">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="pay-method">
+                        <form>
+                            <div class="pay-method-title">
+                                <img src="./images/icon/6.1_09.png" alt="">
+                                <span>PHƯƠNG THỨC THANH TOÁN</span>
+                            </div>
+                            <div class="choose-pay-method">
+                                <input type="button" value="Thẻ ATM nội địa (Internet Banking)">
+                                <input type="button" value="Thanh toán khi nhận hàng">
+                                <input type="button" value="Thẻ tín dụng/Ghi nợ">
+                            </div>
+                            <div class="card">
+                                <div class="img">
+                                    <img src="./images/1.1_25.png" alt="">
+                                    <img src="./images/6.1_07.png" alt="">
+                                    <img src="./images/1.1_29.jpg" alt="">
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-number">
+                                        <label for="card-number">Số thẻ</label> <br>
+                                        <input type="text" name="card-number">
+                                    </div>
+                                    <div class="card-name">
+                                        <label for="card-name">Tên trên thẻ</label> <br>
+                                        <input type="text" name="card-name">
+                                    </div>
+                                    <div class="date-cvv">
+                                        <div class="card-date">
+                                            <label for="card-date">Ngày hết hạn</label> <br>
+                                            <input type="text" name="card-date">
+                                        </div>
+                                        <div class="card-cvv">
+                                            <label for="card-cvv">CVV<img src="./images/icon/6.1_16.png" alt=""></label> <br>
+                                            <input type="text" name="card-cvv">
+                                        </div>
+                                    </div>
+                                    <div class="save">
+                                        <input type="checkbox" name="save" checked>
+                                        <label for="save">Lưu thẻ</label> <br>
+                                        <span>Thông tin được mã hoá và lưu trữ an toàn.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 money">
+                        <div class="supplies-money">
+                            <span>Tổng tiền hàng</span>
+                            <span id="right">đ120.000</span>
+                        </div>
+                        <div class="transport-fee">
+                            <span>Phí vận chuyển</span>
+                            <span id="right">đ16.050</span>
+                        </div>
+                        <div class="total-money">
+                            <span>Tổng tiền hàng (2 sản phẩm):</span>
+                            <span id="right">đ2.000.000</span>
+                        </div>
+                        <div class="request">
+                            <input type="checkbox" name="request">
+                            <label for="request">Yêu cầu xuất hoá đơn</label>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="THANH TOÁN">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Body-->
+
+    <!--Begin Footer-->
+    <footer>
+        <!--Introduction-->
+        <div class="background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <span>Quality Printing</span> <br>
+                        <span>Provide the best quality</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <span>Timely Delivery</span> <br>
+                        <span>Always on time without hassle</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <span>Eco-Minded</span> <br>
+                        <span>All our product is eco-friendly</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <span>Money Back Guaranteed</span> <br>
+                        <span>100% happy customers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Introduction-->
+
+        <div class="background-image">
+            <a href="#">
+                <img src="./images/back-top.png" alt="" id="back-to-top">
+            </a>
+            <div class="container">
+                <div class="sign-up">
+                    <div class="event">
+                        <h3>Đăng ký email nhận ngay khuyến mãi <span>300.000 VNĐ</span></h3>
+                        <span id="follow">Theo dõi danh sách gửi mail của chúng tôi</span>
+                    </div>  
+                    <div class="sign-up-by-email">
+                        <input type="text" placeholder="Email của bạn">
+                        <input type="button" value="ĐĂNG KÝ">
+                    </div>
+                </div>
+                <div class="introduction">
+                    <div class="row">
+                        <div class="col-lg-3 care">
+                            <h6>Chăm sóc khách hàng</h6>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        Hotline: 
+                                        <span>0902 186 865</span>
+                                    </li>
+                                    <li>
+                                        Email:             
+                                        <span>contact@printgo.vn</span>
+                                    </li>
+                                    <li>Hướng dẫn in ấn</li>
+                                    <li>Hướng dẫn thanh toán</li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="col-lg-3 about">
+                            <h6>Về printgo</h6>
+                            <div class="content">
+                                <ul>
+                                    <li>Giới thiệu PrintGo</li>
+                                    <li>Chính sách bản quyền</li>
+                                    <li>Bảo mật thông tin</li>
+                                    <li>Tuyển dụng</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 partners">
+                            <h6>Đối tác</h6>
+                            <div class="content">
+                                <ul>
+                                    <li>Thanh toán</li>
+                                    <li>
+                                        <img src="./images/1.1_25.png" alt="">
+                                        <img src="./images/icon/1.1_41.jpg" alt="">
+                                        <img src="./images/1.1_29.jpg" alt="">
+                                    </li>
+                                    <li>Vận chuyển</li>
+                                    <li>
+                                        <img src="./images/1.1_39.jpg" alt="">
+                                        <img src="./images/1.1_14.jpg" alt="">
+                                        <img src="./images/1.1_43.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 follow-us">
+                            <h6>Theo dõi PrintGo</h6>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <img src="./images/1.1_22.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="./images/1.1_32.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="./images/1.1_37.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-about-us">
+                    <p>
+                        In Bìa Đựng Hồ Sơ | In Folders |  In Danh Thiếp | In Namecards |  In Giấy Tiêu Đề | In Letterheads |  In Bao Thư | In Envelopes |  In Tờ Gấp | In Leaflets, Brochures |  In Áp Phích | In Poster PP |  In Tờ Rơi | In Flyers | In Cẩm Nang | In Catalogues |  In Phiếu Quà Tặng | In Gift Vouchers |  In Hộp Giấy | In Paper Box |  In Túi Giấy | In Paper Bags |  In Nhãn Decal | In Decal Label |  IGift Vouchers |  In Hộp Giấy | In Paper Box
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>
+                    Copyright @ 2002 - 2019
+                    <span>PRINTG<span>O</span>.COM</span>
+                    Company. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+</body>
+</html>
